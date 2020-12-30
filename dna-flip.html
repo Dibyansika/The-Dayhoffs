@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Interior-Design-Responsive-Website-Templates-StyleInn">
+    <meta name="author" content="webThemez.com">
+    <title>The Dayhoffs</title>
+    <link rel="favicon" href="assets/images/favicon.png">
+    <link rel="stylesheet" media="screen" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,700">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <!-- Custom styles for our template -->
+    <link rel="stylesheet" href="assets/css/bootstrap-theme.css" media="screen">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+	<script src="assets/js/html5shiv.js"></script>
+	<script src="assets/js/respond.min.js"></script>
+	<![endif]-->
+</head>
+
+<body>
+    <!-- Fixed navbar -->
+    <div class="navbar navbar-inverse">
+        <div class="container">
+            <div class="navbar-header">
+                <!-- Button for smallest screens -->
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></button>
+                <a class="navbar-brand" href="index.html">
+                    <img src="assets/images/thedayhoffs.jpg" alt="Techro HTML5 template"></a>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav pull-right mainNav">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="about1.html">About1</a></li>
+                    <li class="active"><a href="dna-flip.html">DNA-flip</a></li>
+                    <li><a href="genetic disorders.html">Genetic disorders</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="echoar.html">EchoAR</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <!--/.nav-collapse -->
+        </div>
+    </div>
+    <!-- /.navbar -->
+
+    <header id="head" class="secondary">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-8">
+                    <h1>Flipping of DNA</h1>
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+    <div class="container-fluid">
+        <div class="navbar navbar-default" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <div class="navbar-brand">DNA-Flip</div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-sm-offset-1 col-sm-4">
+                <form class="form-horizontal" role="form">
+                    <div class="form-group">
+                        <label for="input-text">Input Sequence (FASTA or plain)</label>
+                        <textarea id="input-text" class="form-control source-input" rows="5" placeholder="ATGGCAGTT" autocomplete="off"></textarea>
+                    </div>
+                    <div class="btn-group btn-group-justified">
+                        <label class="btn btn-primary">
+                <input type="radio" name="options" id="option1" value="forward" autocomplete="off" checked>
+                Forward<br/><span style="color:silver;font-size:small">5'-ATGGCAGTT-3'</span>
+                </input>
+              </label>
+                        <label class="btn btn-primary">
+                <input type="radio" name="options" id="option2" value="reverse" autocomplete="off">
+                Reverse<br/><span style="color:silver;font-size:small">5'-TTGACGGTA-3'</span>
+                </input>
+              </label>
+                    </div>
+                    <div class="btn-group btn-group-justified">
+                        <label class="btn btn-primary">
+                <input type="radio" name="options" id="option3" value="complement" autocomplete="off">
+                  Complement<br/><span style="color:silver;font-size:small">5'-TACCGTCAA-3'</span>
+                </input>
+              </label>
+                        <label class="btn btn-primary">
+                <input type="radio" name="options" id="option4" value="reverse-complement" autocomplete="off">
+                Reverse complement<br/><span style="color:silver;font-size:small">5'-AACTGCCAT-3'</span>
+                </input>
+              </label>
+                    </div>
+                    <div class="form-group">
+                        <label for="output-text">Output Sequence</label>
+                        <textarea id="output-text" class="form-control source-input" rows="5" autocomplete="off" readonly></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="col-sm-offset-1 col-sm-5">
+                <ul class="nav nav-tabs" id="tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#introduction" aria-controls="introduction" role="tab" data-toggle="tab">Introduction</a></li>
+                    <li role="presentation"><a href="#documentation" aria-controls="documentation" role="tab" data-toggle="tab">Documentation</a></li>
+                </ul>
+
+                <!-- Tab panes -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="introduction">
+                        </br>
+                        <p><b>DNA-Flip</b> is a webpage for quickly obtaining the reverse, complement, or reverse complement of a DNA or RNA sequence.</p>
+                        <p>DNA-Flip is open source, free, and doesn't have ads. I care about your privacy. Conversions happen right in your browser, and your sequence data never leaves your computer.</p>
+                        <p class="bg-info">Did you find this free tool useful? Consider <a href="https://www.patreon.com/rintzezelle">supporting my open-source work on Patreon</a> for as little as $1/month, or <a href="https://www.paypal.me/RintzeZelle/2.50">buy me a coffee via PayPal</a>.<br><br>For
+                            feedback, or to report any issues, please <a href="https://github.com/rmzelle/dna-flip/issues">file an issue on GitHub</a> or ping me on <a href="https://twitter.com/rintzezelle">Twitter</a>.</p>
+                    </div>
+
+                    <div role="tabpanel" class="tab-pane" id="documentation">
+                        </br>
+                        <p>Sequence input may either be in the FASTA format or be plain sequence. Digits and whitespace are ignored and removed. <a href="https://en.wikipedia.org/wiki/Nucleic_acid_notation">Degenerate base symbols</a> are supported per Cornish-Bowden
+                            (1985).
+                        </p>
+                        <p><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC341218/">Cornish-Bowden, A. (1985). Nomenclature for incompletely specified bases in nucleic acid sequences: recommendations 1984. Nucleic Acids Research, 13(9), 3021–3030.</a>
+                            </>
+                            <table class="table table-bordered table-condensed">
+                                <thead>
+                                    <tr>
+                                        <th>Symbol</th>
+                                        <th>Description</th>
+                                        <th colspan="5">Represented Bases</th>
+                                        <th>Complement</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="active">
+                                        <th>A</th>
+                                        <td><b>A</b>denine</td>
+                                        <td>A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td rowspan="5" style="vertical-align:middle">1</td>
+                                        <td>T</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <th>C</th>
+                                        <td><b>C</b>ytosine</td>
+                                        <td></td>
+                                        <td>C</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>G</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <th>G</th>
+                                        <td><b>G</b>uanine</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>G</td>
+                                        <td></td>
+                                        <td>C</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <th>T</th>
+                                        <td><b>T</b>hymine</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>T</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <th>U</th>
+                                        <td><b>U</b>racil</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>U</td>
+                                        <td>A</td>
+                                    </tr>
+                                    <tr>
+                                        <th>R</th>
+                                        <td>pu<b>R</b>ine</td>
+                                        <td>A</td>
+                                        <td></td>
+                                        <td>G</td>
+                                        <td></td>
+                                        <td rowspan="6" style="vertical-align:middle">2</td>
+                                        <td>Y</td>
+                                    </tr>
+                                    <tr>
+                                        <th>Y</th>
+                                        <td>p<b>Y</b>rimidine</td>
+                                        <td></td>
+                                        <td>C</td>
+                                        <td></td>
+                                        <td>T</td>
+                                        <td>R</td>
+                                    </tr>
+                                    <tr>
+                                        <th>M</th>
+                                        <td>a<b>M</b>ino</td>
+                                        <td>A</td>
+                                        <td>C</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>K</td>
+                                    </tr>
+                                    <tr>
+                                        <th>K</th>
+                                        <td><b>K</b>etone</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>G</td>
+                                        <td>T</td>
+                                        <td>M</td>
+                                    </tr>
+                                    <tr>
+                                        <th>W</th>
+                                        <td><b>W</b>eak (2 hydrogen bonds)</td>
+                                        <td>A</td>
+                                        <td></td>
+                                        <td></td>
+                                        <td>T</td>
+                                        <td>W</td>
+                                    </tr>
+                                    <tr>
+                                        <th>S</th>
+                                        <td><b>S</b>trong (3 hydrogen bonds)</td>
+                                        <td></td>
+                                        <td>C</td>
+                                        <td>G</td>
+                                        <td></td>
+                                        <td>S</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <th>B</th>
+                                        <td>not A</td>
+                                        <td></td>
+                                        <td>C</td>
+                                        <td>G</td>
+                                        <td>T</td>
+                                        <td rowspan="4" style="vertical-align:middle">3</td>
+                                        <td>V</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <th>D</th>
+                                        <td>not C</td>
+                                        <td>A</td>
+                                        <td></td>
+                                        <td>G</td>
+                                        <td>T</td>
+                                        <td>H</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <th>H</th>
+                                        <td>not G</td>
+                                        <td>A</td>
+                                        <td>C</td>
+                                        <td></td>
+                                        <td>T</td>
+                                        <td>D</td>
+                                    </tr>
+                                    <tr class="active">
+                                        <th>V</th>
+                                        <td>not T</td>
+                                        <td>A</td>
+                                        <td>C</td>
+                                        <td>G</td>
+                                        <td></td>
+                                        <td>B</td>
+                                    </tr>
+                                    <tr>
+                                        <th>N</th>
+                                        <td>a<b>N</b>y</td>
+                                        <td>A</td>
+                                        <td>C</td>
+                                        <td>G</td>
+                                        <td>T</td>
+                                        <td>4</td>
+                                        <td>N</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar navbar-fixed-bottom" role="navigation">
+        <div class="container-fluid">
+            <p class="navbar-text"><small>Created by <a href="http://rintze.zelle.me/">Rintze M. Zelle</a>. Powered by GitHub Pages. <a href="https://github.com/rmzelle/dna-flip">Code</a> on GitHub. Favicon by <a href="https://www.freepik.com/" title="Freepik">Freepik</a> via <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> (<a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC-BY 3.0</a>).</small></p>
+        </div>
+    </div>
+    <script>
+        //http://www.ncbi.nlm.nih.gov/pmc/articles/PMC341218/
+        //https://web.archive.org/web/20170201023839/http://www.chem.qmul.ac.uk/iubmb/misc/naseq.html
+        //https://en.wikipedia.org/wiki/Nucleic_acid_notation
+        //TODO: add table to webpage (http://getbootstrap.com/css/#tables-condensed)
+        var complementTable = {
+            "A": "T",
+            "C": "G",
+            "G": "C",
+            "T": "A",
+            "U": "A",
+            "R": "Y",
+            "Y": "R",
+            "M": "K",
+            "K": "M",
+            "W": "W",
+            "S": "S",
+            "B": "V",
+            "D": "H",
+            "H": "D",
+            "V": "B",
+            "N": "N",
+            "a": "t",
+            "c": "g",
+            "g": "c",
+            "t": "a",
+            "u": "a",
+            "r": "y",
+            "y": "r",
+            "m": "k",
+            "k": "m",
+            "w": "w",
+            "s": "s",
+            "b": "v",
+            "d": "h",
+            "h": "d",
+            "v": "b",
+            "n": "n"
+        }
+
+        // Add event listener to input field
+        var inputTextArea = document.getElementById('input-text');
+        inputTextArea.addEventListener('input', function() {
+            convertInput(inputTextArea.value)
+        }, false);
+
+        // Add event listeners to radio buttons
+        var radiobuttons = document.querySelectorAll("input[type='radio']");
+        for (var i = 0; i < radiobuttons.length; i++) {
+            radiobuttons[i].addEventListener('change', function() {
+                convertInput(inputTextArea.value)
+            }, false);
+        }
+
+        function convertInput(input) {
+            var fastaHeader = "";
+            var inputSequence = "";
+            var outputSequence = "";
+            var outputString = "";
+
+            // Isolate FASTA header from input sequence (if present)
+            input = input.trim();
+            if (input.charAt(0) == ">") {
+                if (input.includes("\n")) {
+                    let inputLines = input.split('\n');
+                    fastaHeader = inputLines[0];
+                    inputLines.shift();
+                    inputSequence = inputLines.join("");
+                } else {
+                    fastaHeader = input;
+                }
+            } else {
+                inputSequence = input;
+            }
+
+            // Strip whitespace and digits from inputSequence
+            inputSequence = inputSequence.replace(/\s/g, '');
+            inputSequence = inputSequence.replace(/\d/g, '');
+
+            // Check input sequence for invalid characters
+            for (var i = 0; i < inputSequence.length; i++) {
+                if (!(complementTable.hasOwnProperty(inputSequence[i]))) {
+                    document.getElementById("output-text").value = "Error: input contains unrecognized characters";
+                    return;
+                }
+            }
+
+            // Perform sequence conversion based on selection
+            var selectedConversion = document.querySelector('input[name="options"]:checked').value;
+            switch (selectedConversion) {
+                case 'forward':
+                    outputSequence = inputSequence;
+                    break;
+                case 'reverse':
+                    outputSequence = reverseString(inputSequence);
+                    break;
+                case 'complement':
+                    outputSequence = complementSequence(inputSequence);
+                    break;
+                case 'reverse-complement':
+                    outputSequence = complementSequence(reverseString(inputSequence));
+                    break;
+            }
+
+            // Reattach FASTA header (if present)
+            if (fastaHeader.length > 0) {
+                outputString = [fastaHeader, outputSequence].join("\n");
+            } else {
+                outputString = outputSequence;
+            }
+
+            document.getElementById("output-text").value = outputString;
+        }
+
+        function reverseString(inputString) {
+            var outputString = "";
+            // Based on http://eddmann.com/posts/ten-ways-to-reverse-a-string-in-javascript/
+            for (var i = inputString.length - 1; i >= 0; i--) {
+                outputString += inputString[i];
+            }
+            return outputString;
+        }
+
+        function complementSequence(inputString) {
+            var outputString = "";
+            for (var i = 0; i < inputString.length; i++) {
+                outputString += complementTable[inputString[i]];
+            }
+            return outputString;
+        }
+    </script>
+
+
+
+    <footer id="footer">
+        <div class="container">
+            <div class="social text-center">
+                <a href="#"><i class="fa fa-twitter"></i></a>
+                <a href="#"><i class="fa fa-facebook"></i></a>
+                <a href="#"><i class="fa fa-dribbble"></i></a>
+                <a href="#"><i class="fa fa-flickr"></i></a>
+                <a href="#"><i class="fa fa-github"></i></a>
+            </div>
+
+            <div class="clear"></div>
+            <!--CLEAR FLOATS-->
+        </div>
+        <div class="footer2">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-md-6 panel">
+                        <div class="panel-body">
+                            <p class="simplenav">
+                                <a href="index.html">Home</a> |
+                                <a href="about.html">About</a> |
+                                <a href="about1.html">About1</a> |
+                                <a href="dna-flip.html">DNA-flip</a> |
+                                <a href="genetic disorders.html">Genetic disorders</a> |
+                                <a href="services.html">Services</a> |
+                                <a href="echoar.html">EchoAR</a> |
+                                <a href="contact.html">Contact</a>
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 panel">
+                        <div class="panel-body">
+                            <p class="text-right">
+                                Created by <a href="https://github.com/Arpita1401" rel="develop">Arpita Mohanty</a>
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- /row of panels -->
+            </div>
+        </div>
+    </footer>
+
+
+
+    <!-- JavaScript libs are placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+</body>
+
+</html>
